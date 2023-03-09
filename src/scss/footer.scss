@@ -1,0 +1,97 @@
+//====================================================================================================
+.footer {
+	padding: rem(56) rem(0) rem(56) rem(0);
+	background: $bg-color;
+
+	&__container {
+		display: flex;
+		justify-content: center;
+		@include adaptiveValue('gap', 100, 30);
+		@media (max-width: $mobile) {
+			flex-direction: column;
+		}
+	}
+
+	&__column {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__logo {
+		font-weight: 700;
+		font-size: rem(24);
+		color: $darkColor;
+		&:not(:last-child) {
+			margin-bottom: rem(38);
+			@media (max-width: $mobile) {
+				margin-bottom: rem(20);
+			}
+		}
+	}
+
+	&__text {
+		max-width: rem(328);
+		line-height: 178%;
+	}
+
+	&__sub-title {
+		font-weight: 500;
+		line-height: 120%;
+		color: $darkColor;
+		&:not(:last-child) {
+			margin-bottom: rem(38);
+			@media (max-width: $mobile) {
+				margin-bottom: rem(20);
+			}
+		}
+	}
+
+	&__menu {
+	}
+
+	&__email {
+		&:not(:last-child) {
+			margin-bottom: rem(20);
+		}
+	}
+
+	&__tel {
+		&:not(:last-child) {
+			margin-bottom: rem(20);
+		}
+	}
+
+	&__social {
+		display: flex;
+		gap: rem(26);
+	}
+
+	&__item {
+	}
+}
+.menu-footer {
+
+	&__body {
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		gap: rem(20);
+	}
+
+	&__item {
+	}
+
+	&__link {
+		transition: all 0.3s ease-out 0s;
+		@media (any-hover: hover) {
+			&:hover {
+				border-bottom: 1px solid $mainColor;
+			}
+		}
+	}
+}
+
+
+//====================================================================================================
